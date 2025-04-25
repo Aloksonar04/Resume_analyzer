@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Upload Resumes</h2>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <label>Select Resumes (PDF/DOCX):</label><br>
+        <input type="file" name="resumes" multiple required><br><br>
+        <label>Target Skills (comma-separated):</label><br>
+        <input type="text" name="skills" placeholder="e.g. python, flask, sql" required><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
